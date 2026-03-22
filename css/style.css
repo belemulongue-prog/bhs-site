@@ -1224,100 +1224,20 @@ a {
   }
 }
 
-/* ===== Arrière-plans professionnels par rubrique ===== */
+/* ===== Heroes avec images de fond : version propre finale ===== */
 
 .hero-home,
 .page-hero {
-  padding: 58px 0;
-}
-
-.hero-home::before,
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(16, 40, 74, 0.28), rgba(12, 138, 99, 0.16));
-  z-index: 1;
-}
-
-.hero-home .container,
-.page-hero .container {
-  width: min(92%, 840px);
-  margin-left: 70px;
-  margin-right: auto;
-  padding: 26px 28px;
-  background: rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(5px);
-  border-radius: 24px;
-}
-
-.hero-home {
-  background-color: #dfe8ec;
-  background-image: url("../assets/images/bg-home.jfif");
-  background-repeat: no-repeat;
-  background-position: center 42%;
-  background-size: 92% auto;
-}
-
-.page-hero-about {
-  background-color: #dfe8ec;
-  background-image: url("../assets/images/bg-about.jfif");
-  background-repeat: no-repeat;
-  background-position: center 36%;
-  background-size: 88% auto;
-}
-
-.page-hero-services {
-  background-color: #dfe8ec;
-  background-image: url("../assets/images/bg-services.jfif");
-  background-repeat: no-repeat;
-  background-position: center 42%;
-  background-size: 88% auto;
-}
-
-.page-hero-why {
-  background-color: #dfe8ec;
-  background-image: url("../assets/images/bg-why.jfif");
-  background-repeat: no-repeat;
-  background-position: center 42%;
-  background-size: 88% auto;
-}
-
-.page-hero-contact {
-  background-color: #dfe8ec;
-  background-image: url("../assets/images/bg-contact.jfif");
-  background-repeat: no-repeat;
-  background-position: center 12%;
-  background-size: 84% auto;
-}
-
-@media (max-width: 980px) {
-
-  .hero-home .container,
-  .page-hero .container {
-    width: min(92%, 100%);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 24px;
-    border-radius: 22px;
-  }
-
-  .hero-home,
-  .page-hero {
-    padding: 54px 0;
-  }
-}
-
-/* ===== Ajustement du rendu des images de fond ===== */
-
-.hero-home,
-.page-hero {
-  padding: 46px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 44px 0;
 }
 
 .hero-home .container,
 .page-hero .container {
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
   max-width: 800px;
   width: calc(100% - 110px);
   margin-left: 55px;
@@ -1331,32 +1251,47 @@ a {
 
 /* Accueil */
 .hero-home {
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-home.jfif");
+  background-repeat: no-repeat;
   background-position: center 40%;
   background-size: 88% auto;
 }
 
 /* À propos */
 .page-hero-about {
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-about.jfif");
+  background-repeat: no-repeat;
   background-position: center 34%;
-  background-size: 84% auto;
+  background-size: 82% auto;
 }
 
 /* Services */
 .page-hero-services {
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-services.jfif");
+  background-repeat: no-repeat;
   background-position: center 36%;
-  background-size: 84% auto;
+  background-size: 82% auto;
 }
 
 /* Pourquoi BHS */
 .page-hero-why {
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-why.jfif");
+  background-repeat: no-repeat;
   background-position: center 38%;
-  background-size: 84% auto;
+  background-size: 80% auto;
 }
 
 /* Contact */
 .page-hero-contact {
-  background-position: center 10%;
-  background-size: 78% auto;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-contact.jfif");
+  background-repeat: no-repeat;
+  background-position: center 8%;
+  background-size: 74% auto;
 }
 
 @media (max-width: 980px) {
@@ -1368,7 +1303,8 @@ a {
 
   .hero-home .container,
   .page-hero .container {
-    width: min(92%, 100%);
+    width: calc(100% - 32px);
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
