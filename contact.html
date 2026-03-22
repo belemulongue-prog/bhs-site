@@ -129,11 +129,13 @@
 
         <div class="contact-form-layout">
           <div class="contact-form-card">
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="https://formspree.io/f/xdawvveo" method="POST">
+              <input type="hidden" name="_subject" value="Nouvelle demande depuis le site BHS">
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="nom">Nom et prénom</label>
-                  <input type="text" id="nom" name="nom" placeholder="Votre nom complet" />
+                  <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
                 </div>
 
                 <div class="form-group">
@@ -145,12 +147,12 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="telephone">Téléphone</label>
-                  <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" />
+                  <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required />
                 </div>
 
                 <div class="form-group">
                   <label for="email">E-mail</label>
-                  <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" />
+                  <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required />
                 </div>
               </div>
 
@@ -179,7 +181,8 @@
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6"
-                  placeholder="Décrivez votre besoin, votre site ou le type d’intervention souhaité"></textarea>
+                  placeholder="Décrivez votre besoin, votre site ou le type d’intervention souhaité"
+                  required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary">Envoyer la demande</button>
