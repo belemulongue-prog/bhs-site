@@ -1252,23 +1252,43 @@ a {
 }
 
 .hero-home {
-  background: url("../assets/images/bg-home.jfif") center 42% / 92% auto no-repeat;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-home.jfif");
+  background-repeat: no-repeat;
+  background-position: center 42%;
+  background-size: 92% auto;
 }
 
 .page-hero-about {
-  background: url("../assets/images/bg-about.jfif") center 38% / 90% auto no-repeat;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-about.jfif");
+  background-repeat: no-repeat;
+  background-position: center 36%;
+  background-size: 88% auto;
 }
 
 .page-hero-services {
-  background: url("../assets/images/bg-services.jfif") center 40% / 90% auto no-repeat;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-services.jfif");
+  background-repeat: no-repeat;
+  background-position: center 42%;
+  background-size: 88% auto;
 }
 
 .page-hero-why {
-  background: url("../assets/images/bg-why.jfif") center 42% / 90% auto no-repeat;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-why.jfif");
+  background-repeat: no-repeat;
+  background-position: center 42%;
+  background-size: 88% auto;
 }
 
 .page-hero-contact {
-  background: url("../assets/images/bg-contact.jfif") center 18% / 88% auto no-repeat;
+  background-color: #dfe8ec;
+  background-image: url("../assets/images/bg-contact.jfif");
+  background-repeat: no-repeat;
+  background-position: center 12%;
+  background-size: 84% auto;
 }
 
 @media (max-width: 980px) {
@@ -1284,7 +1304,7 @@ a {
 
   .hero-home,
   .page-hero {
-    padding: 56px 0;
+    padding: 54px 0;
   }
 }
 
@@ -1292,56 +1312,55 @@ a {
 
 .hero-home,
 .page-hero {
-  padding: 56px 0;
+  padding: 46px 0;
 }
 
 .hero-home .container,
 .page-hero .container {
-  width: min(92%, 860px);
-  margin-left: 80px;
+  width: min(92%, 820px);
+  margin-left: 60px;
   margin-right: auto;
-  padding: 28px 30px;
-  background: rgba(255, 255, 255, 0.72);
+  padding: 22px 26px;
+  background: rgba(255, 255, 255, 0.66);
   backdrop-filter: blur(5px);
-  border-radius: 26px;
+  border-radius: 22px;
 }
 
-/* Page accueil */
+/* Accueil */
 .hero-home {
-  background-position: center 38%;
-  background-size: cover;
+  background-position: center 40%;
+  background-size: 88% auto;
 }
 
-/* Pages internes : on dézoome légèrement */
-.page-hero-about,
-.page-hero-services,
-.page-hero-why,
-.page-hero-contact {
-  background-size: 100% auto;
-}
-
-/* Recentrage précis par rubrique */
+/* À propos */
 .page-hero-about {
-  background-position: center 18%;
+  background-position: center 34%;
+  background-size: 84% auto;
 }
 
+/* Services */
 .page-hero-services {
-  background-position: center 14%;
+  background-position: center 36%;
+  background-size: 84% auto;
 }
 
+/* Pourquoi BHS */
 .page-hero-why {
-  background-position: center 20%;
+  background-position: center 38%;
+  background-size: 84% auto;
 }
 
+/* Contact */
 .page-hero-contact {
-  background-position: center 50%;
+  background-position: center 10%;
+  background-size: 78% auto;
 }
 
 @media (max-width: 980px) {
 
   .hero-home,
   .page-hero {
-    padding: 46px 0;
+    padding: 40px 0;
   }
 
   .hero-home .container,
@@ -1349,10 +1368,12 @@ a {
     width: min(92%, 100%);
     margin-left: auto;
     margin-right: auto;
-    padding: 22px;
+    padding: 20px;
     border-radius: 20px;
   }
 
+  .hero-home,
+  .page-hero,
   .page-hero-about,
   .page-hero-services,
   .page-hero-why,
