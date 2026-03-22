@@ -1317,13 +1317,16 @@ a {
 
 .hero-home .container,
 .page-hero .container {
-  width: min(92%, 820px);
-  margin-left: 60px;
-  margin-right: auto;
+  box-sizing: border-box;
+  max-width: 800px;
+  width: calc(100% - 110px);
+  margin-left: 55px;
+  margin-right: 0;
   padding: 22px 26px;
-  background: rgba(255, 255, 255, 0.66);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(4px);
   border-radius: 22px;
+  overflow: hidden;
 }
 
 /* Accueil */
