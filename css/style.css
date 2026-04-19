@@ -1282,7 +1282,7 @@ a {
   position: relative;
   overflow: hidden;
   background-color: #dfe8ec;
-  background-image: url("../assets/images/equipe_bhs.png");
+  background-image: url("../assets/equipe_bhs.png");
   background-repeat: no-repeat;
   background-position: center 35%;
   background-size: cover;
@@ -1326,6 +1326,7 @@ a {
   padding: 20px;
   border-radius: 20px;
 }
+
 
 /* Pourquoi BHS */
 .page-hero-why {
