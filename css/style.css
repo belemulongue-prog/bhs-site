@@ -1279,11 +1279,52 @@ a {
 
 /* Services */
 .page-hero-services {
+  position: relative;
+  overflow: hidden;
   background-color: #dfe8ec;
   background-image: url("../assets/images/equipe_bhs.png");
   background-repeat: no-repeat;
-  background-position: center 36%;
-  background-size: 42% auto;
+  background-position: center 35%;
+  background-size: cover;
+}
+
+.page-hero-services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.86) 0%,
+      rgba(255, 255, 255, 0.74) 42%,
+      rgba(255, 255, 255, 0.26) 100%);
+  z-index: 1;
+}
+
+.page-hero-services .container {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  width: calc(100% - 110px);
+  margin-left: 55px;
+  margin-right: 0;
+  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.page-hero-services {
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-hero-services .container {
+  width: calc(100% - 32px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* Pourquoi BHS */
